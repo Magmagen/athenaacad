@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena Academy</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"><img src="images/logo.png" alt="logo" width="70px"><b>Athena Academy</b></a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links"><b>Home</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="about.html" class="navbar__links"><b>About</b></a>
+            </li>
+            <li class="navbar__item">
+                <a href="courses.html" class="navbar__links"><b>Courses</b></a>
+            </li>
+            <li class="navbar__btn">
+                <a href="signup.html" class="button"><b>Sign Up</b></a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Athena Academy Registration Form</h1>
+            <p>Please complete the form below to register</p>        </div>
+    </div>
+  </div>
+
+  <!-- Form Section-->
+  <div class="signup-form">
+    <h2 class="title">Athena Academy Online Registration</h2>
+    <form action="https://formsubmit.co/zhu@athenatutoracademy.com" method="POST">
+      <div class="form-group">
+        <label for="name" class="label">Name:</label>
+        <input type="text" id="name" name="name" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="age" class="label">Age:</label>
+          <input type="number" id="age" name="age" min="0" max="100" required>
+        </div>
+      <div class="form-group">
+        <label for="gender" class="label">Gender:</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other (please specify)</label>
+          <input type="text" id="other-gender" name="other-gender" placeholder="Specify your gender">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="label">Email:</label>
+        <input type="email" id="email" name="email" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <label for="password" class="label">Password:</label>
+        <input type="password" id="password" name="password" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <label for="grade-level" class="label">Grade Level:</label>
+        <select id="grade-level" name="grade-level" class="select-field" required>
+          <option value="">Select Grade Level</option>
+          <option value="1">1st Grade</option>
+          <option value="2">2nd Grade</option>
+          <option value="3">3rd Grade</option>
+          <option value="4">4th Grade</option>
+          <option value="5">5th Grade</option>
+          <option value="6">5th Grade</option>
+          <option value="7">5th Grade</option>
+          <option value="8">5th Grade</option>
+          <option value="9">9th Grade</option>
+          <option value="10">10th Grade</option>
+          <option value="11">11th Grade</option>
+          <option value="12">12th Grade</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="tutor" class="label">Select a Preferred Tutor (you may not get the one you select):</label>
+        <select id="tutor" name="tutor" class="select-field" required>
+          <option value="">Select a Tutor</option>
+          <!-- Add tutor options here -->
+          <option value="Rudransh Mistry">Rudransh Mistry</option>
+          <option value="Jane Smith">Jane Smith</option>
+          <option value="Bob Johnson">Bob Johnson</option>
+          <!-- Add more tutor options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="course-interests" class="label">Interests (Tell us about yourself):</label>
+        <textarea id="course-interests" name="course-interests" class="textarea-field" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment-method" class="label">Payment Method:</label>
+        <select id="payment-method" name="payment-method" class="select-field" required>
+          <option value="">Select Payment Method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank-transfer">Bank Transfer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="payment-email" class="label">Payment Email:</label>
+        <input type="email" id="payment-email" name="payment-email" class="input-field" required>
+      </div>
+      <div class="form-group">
+        <label for="courses" class="label">Courses:</label>
+        <div class="course-options">
+          <label>
+            <input type="checkbox" name="courses[]" value="math">
+            Math
+          </label>
+          <label>
+            <input type="checkbox" name="courses[]" value="science">
+            Science
+          </label>
+          <label>
+            <input type="checkbox" name="courses[]" value="english">
+            English
+          </label>
+          <label>
+            <input type="checkbox" name="courses[]" value="history">
+            History
+          </label>
+          <label>
+            <input type="checkbox" name="courses[]" value="foreign-language">
+            Foreign Language
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="additional-info" class="label">Additional Information:</label>
+        <textarea id="additional-info" name="additional-info" class="textarea-field"></textarea>
+      </div>
+      <button type="submit" class="submit-button">Register</button>
+      
+    </form>
+  </div>
+</div>
+
+  <!-- Services Section-->
+
+  <div class="services">
+    <div class="services__container">
+    </div>
+  </div>
+
+  <!-- Footer Section-->
+  <div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="index.html">How it Works</a>
+                <a href="index.html">Testimonials</a>
+                <a href="index.html">Careers</a>
+                <a href="courses.html">Courses</a>
+                <a href="index.html">Contacts</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>Socials</h2>
+                <a href=index.html">Facebook</a>
+                <a href="index.html">Instagram</a>
+                <a href="index.html">Twitter</a>
+                <a href="index.html">LinkedIn</a>
+                <a href="index.html">YouTube</a>
+            </div>
+        </div>
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Main Courses</h2>
+                <a href="index.html">Math</a>
+                <a href="index.html">Science</a>
+                <a href="index.html">Social</a>
+                <a href="index.html">Language Arts</a>
+                <a href="index.html">Computer Science</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>Courses</h2>
+                <a href="index.html">Blender</a>
+                <a href="index.html">Python</a>
+                <a href="index.html">Java</a>
+                <a href="index.html">C</a>
+                <a href="index.html">C++</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="index.html" id="footer__logo"><b>Athena Academy</b></a>
+            </div>
+            <p class="website__rights">© Athena Academy. All rights reserved</p>
+            <div class="social__icons">
+                <a class="social__icon--link" href="/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="social__icon--link" href="/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social__icon--link" href="/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social__icon--link" href="/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="social__icon--link" href="/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+   </div>
+  <script src = "signup.js"></script>
+</body>
+</html>
