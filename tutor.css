@@ -402,6 +402,7 @@
 }
 
 .services__card p {
+    padding-right: 1rem;
     margin-top: -16.5rem;
     position: absolute;
     top: 130px;
@@ -452,19 +453,45 @@
     cursor: pointer;
 }
 
+.services__card:nth-child(1) {
+    height: 19rem
+}
+.services__card:nth-child(2) {
+    height: 19rem
+}
+.services__card:nth-child(3) {
+    height: 19rem
+}
+.services__card:nth-child(4) {
+    height: 19rem
+}
+
+
 @media screen and (max-width: 960px) {
     .services {
-        height: 4300px;
+        height: 320rem;
     }
     .services h1 {
         font-size: 2rem;
         margin-top: 12rem;
     }
+    .services__card:nth-child(1) {
+        height: 44rem
+    }
+    .services__card:nth-child(2) {
+        height: 44rem
+    }
+    .services__card:nth-child(3) {
+        height: 44rem
+    }
+    .services__card:nth-child(4) {
+        height: 44rem
+    }
 }
 
 @media screen and (max-width: 480px) {
     .services {
-        height: 4500px;
+        height: 300rem;
     }
     .services h1 {
         font-size: 1.2rem;
