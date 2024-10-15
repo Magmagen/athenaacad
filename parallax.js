@@ -1,5 +1,13 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
+const menuItems = document.querySelectorAll('.navbar__item');
+
+menuItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+  });
+});
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
@@ -27,3 +35,5 @@ window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY;
   imgContainer.style.transform = `translateY(${scrollPosition * 0.9}px)`;
 });
+
+
