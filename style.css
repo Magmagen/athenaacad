@@ -462,7 +462,7 @@
 
 @media screen and (max-width: 960px) {
     .services {
-        height: 1600px;
+        height: 1700px;
     }
     .services h1 {
         font-size: 2rem;
@@ -472,7 +472,7 @@
 
 @media screen and (max-width: 480px) {
     .services {
-        height: 1400px;
+        height: 1800px;
     }
     .services h1 {
         font-size: 1.2rem;
@@ -627,5 +627,35 @@
     }
     
   }
-  
-  
+
+/* Time Section CSS */
+
+.time {
+    z-index: 2;
+    position: relative;
+    padding-top: 30px;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}   
+
+@media screen and (max-width: 960px) {
+    .time {
+        height: 1200px;
+    }
+}
